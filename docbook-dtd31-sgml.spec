@@ -20,7 +20,6 @@ Requires(postun)	: sgml-common
 Requires(post)	: sgml-common
 BuildRequires: 	dos2unix
 
-BuildRoot   	: %{_tmppath}/%{name}-%{version}-buildroot
 
 # Zip file downloadable at http://www.oasis-open.org/docbook/sgml/%{dtdver}/
 Source0		: docbk31.tar.bz2 
