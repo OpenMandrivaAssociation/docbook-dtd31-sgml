@@ -24,7 +24,7 @@ BuildRoot   	: %{_tmppath}/%{name}-%{version}-buildroot
 
 # Zip file downloadable at http://www.oasis-open.org/docbook/sgml/%{dtdver}/
 Source0		: docbk31.tar.bz2 
-Patch0          : %{name}-%{version}.catalog.patch.bz2
+Patch0          : %{name}-%{version}.catalog.patch
 BuildArch	: noarch  
 
 %description
@@ -35,7 +35,7 @@ This is the version %{dtdver} of this DTD.
 
 %prep
 %setup -q
-%patch -p1 
+%patch0 -p1 
 
 %build
 
