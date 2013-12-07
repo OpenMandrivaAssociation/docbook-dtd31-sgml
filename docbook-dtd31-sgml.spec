@@ -1,6 +1,6 @@
 %define name docbook-dtd31-sgml
 %define version 1.0
-%define release 22
+%define release 23
 %define dtdver 3.1
 %define mltyp sgml
 %define sgmlbase %{_datadir}/sgml
@@ -8,7 +8,7 @@
 Summary:	SGML document type definition for DocBook %{dtdver}
 Name:		docbook-dtd31-sgml
 Version:	1.0
-Release:	22
+Release:	23
 Group:		Publishing
 License:	Artistic
 Url:		http://www.oasis-open.org/docbook/
