@@ -6,14 +6,14 @@
 Summary:	SGML document type definition for DocBook %{dtdver}
 Name:		docbook-dtd31-sgml
 Version:	1.0
-Release:	30
+Release:	31
 Group:		Publishing
 License:	Artistic
 Url:		http://www.oasis-open.org/docbook/
 # Zip file downloadable at http://www.oasis-open.org/docbook/sgml/%{dtdver}/
 Source0:	docbk31.tar.bz2 
 Patch0:		%{name}-%{version}.catalog.patch
-BuildArch:	noarch  
+BuildArch:	noarch
 
 BuildRequires:	dos2unix
 Provides:	docbook-dtd-sgml
@@ -41,7 +41,6 @@ install *.dtd $DESTDIR
 install *.mod $DESTDIR
 mkdir -p %{buildroot}%{_sysconfdir}/sgml
 touch %{buildroot}%{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
-touch %{buildroot}%{_sysconfdir}/sgml/catalog
 
 %post
 %{_bindir}/xmlcatalog --sgml --noout --add \
@@ -93,6 +92,5 @@ fi
 %files
 %doc *.txt ChangeLog
 %ghost %config(noreplace) %{_sysconfdir}/sgml/%{mltyp}-docbook-%{dtdver}.cat
-%ghost %config(noreplace) %{_sysconfdir}/sgml/catalog
 %{sgmlbase}/docbook/sgml-dtd-%{dtdver}
 
