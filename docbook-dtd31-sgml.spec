@@ -9,7 +9,7 @@ Version:	1.0
 Release:	35
 Group:		Publishing
 License:	Artistic
-Url:		http://www.oasis-open.org/docbook/
+Url:		https://www.oasis-open.org/docbook/
 # Zip file downloadable at http://www.oasis-open.org/docbook/sgml/%{dtdver}/
 Source0:	docbk31.tar.bz2 
 Patch0:		%{name}-%{version}.catalog.patch
